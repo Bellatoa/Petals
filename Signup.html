@@ -15,11 +15,11 @@
       overflow: hidden;
       background-color: rgb(199, 150, 158);
 }
-li {
+li a{
       display: inline;
       float: left;
   }
-  li{
+  li a{
       display: block;
       padding: 36px 20px;
       color: white;
@@ -30,15 +30,63 @@ li {
       color: #716b6b;
       background-color: #fffdfd;
   }
-  a:link {
+  b {
        color: #454040;
     }
+    b:hover {
+      color: #716b6b;
+      background-color: #fffdfd;
+  }
+  b {
+       color: #454040;
+    }
+    b{
+      display: inline;
+      float: right;
+  }
+  b{
+      display: block;
+      padding: 30px 20px;
+      color: white;
+      background-color: #ddd;
+      text-decoration: none;
+  }
 </style>
 <body>
     <ul>
         <li><a href="file:///C:/Users/Bella/OneDrive/Desktop/Petal%20tech/Petal.html">Home</a></li>
         <li><a href="file:///C:/Users/Bella/OneDrive/Desktop/Petal%20tech/%23products.html">Products</a></li>
         <li><a href="file:///C:/Users/Bella/OneDrive/Desktop/Petal%20tech/%23Information.html">Information</a></li>
-        <li><a herf="file:///C:/Users/Bella/OneDrive/Desktop/Petal%20tech%202/Petals-1/Signup.html">Sign Up</a></li>
+        <b herf="Signup.html">Sign Up</b>
+      
+      <br> <br>
+        <div id="enterdetails">
+            <H1>Enter Details</H1>
+    
+            <h4>Id</h4>
+            <input id="Createusername" type="text">  
+    
+            <h4>Name</h4>
+            <input id="enterName" type="text">  
+    
+            <h4>Age</h4>
+            <input id="enterAge" type="number"> <br><br>
+    
+        <button id="insert">INSERT</button>
+        <button id="update">UPDATE</button>
+        <button id="remove">REMOVE</button> <br><br>
+        </div>
+    
+        <div id="findaccount">
+    <H1>Find By Username</H1>
+    <H4>Username</H4>
+    <input id="findUsername" type="text">  <br><br>
+        <Button id="find">Find</Button>
+    
+        <h3 id="findName" type="text"></h3>
+        <h3 id="findAge" type="text"></h3> <br><br>
+    
+    
+        </div>
 </body>
 </html>
